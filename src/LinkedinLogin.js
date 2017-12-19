@@ -80,7 +80,7 @@ class LinkedinLogin {
         reject(error);
       });
 
-      const options = 'id,first-name,last-name,industry,email-address,public-profile-url';
+      const options = 'id,first-name,last-name,industry,email-address,public-profile-url,picture-url,picture-urls::(original)';
       const profilestr = `https://api.linkedin.com/v1/people/~:(${options})`;
 
       RNLinkedinLogin.getRequest(profilestr);
